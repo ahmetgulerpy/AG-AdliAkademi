@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0b1220;
+  --color-charcoal: #12151a;
+  --color-panel: #171b22;
+  --color-panel2: #1d222b;
+  --color-line: #262d39;
+  --color-line2: #333c4b;
+  --color-blue: #2f6bff;
+  --color-blue2: #5b8cff;
+  --color-cyan: #38d6e6;
+  --color-amber: #f2c14e;
+  --color-mist: #8b96a8;
+  --color-mist2: #a9b3c2;
+  --color-paper: #e8ecf2;
+  --color-good: #46d39a;
+  --color-bad: #ff6b6b;
+
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", monospace;
+  --font-serif: "IBM Plex Serif", ui-serif, Georgia, serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background: var(--color-charcoal);
+  color: var(--color-paper);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-image:
+    radial-gradient(1200px 600px at 78% -10%, rgba(47, 107, 255, 0.13), transparent 60%),
+    linear-gradient(180deg, #0b1220 0%, #12151a 380px, #12121a 100%);
+  background-attachment: fixed;
+}
+
+/* — teknik veri sayfası mikro etiketleri — */
+.micro {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  line-height: 1;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-mist);
+}
+
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+.rule {
+  border-color: var(--color-line);
+}
+
+/* ince tarama dokusu — metal tezgâh hissi */
+.hatch {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.022) 0px,
+    rgba(255, 255, 255, 0.022) 1px,
+    transparent 1px,
+    transparent 7px
+  );
+}
+
+::selection {
+  background: rgba(56, 214, 230, 0.3);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0e1116;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a323f;
+  border: 2px solid #0e1116;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a4553;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-cyan);
+  outline-offset: 2px;
+}
+
+@keyframes avalanche {
+  0% {
+    color: #f2c14e;
+    background: rgba(242, 193, 78, 0.35);
+    transform: translateY(-2px);
+  }
+  60% {
+    color: #38d6e6;
+    background: rgba(56, 214, 230, 0.22);
+  }
+  100% {
+    color: inherit;
+    background: transparent;
+    transform: translateY(0);
+  }
+}
+
+.avalanche {
+  animation: avalanche 620ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
