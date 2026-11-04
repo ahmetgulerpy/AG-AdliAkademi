@@ -238,21 +238,24 @@ See the [LICENSE](LICENSE) file for details.
 
 ## Author
 
-**Ahmet GÜLER**
+**Ahmet GÜLER**  
+Cybersecurity Researcher & Digital Forensics
 
-Cybersecurity & Digital Forensics
+**AG CYBER LAB**
 
-AG CYBER LAB
-
-GitHub: [@ahmetgulerpy](https://github.com/ahmetgulerpy)
-Instagram: [@ahmetgulerpy] (https://instagram.com/ahmetgulerpy)
+<p align="center">
+  <a href="https://github.com/ahmetgulerpy">
+    <img src="https://img.shields.io/badge/GitHub-ahmetgulerpy-181717?style=for-the-badge&logo=github" alt="GitHub" />
+  </a>
+  <a href="https://instagram.com/ahmetgulerpy">
+    <img src="https://img.shields.io/badge/Instagram-@ahmetgulerpy-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+  </a>
+</p>
 
 ---
 
 <p align="center">
-  <strong>AG CYBER LAB</strong>
-  <br />
-  Digital Forensics Academy & Virtual Investigation Environment
-  <br /><br />
+  <strong>AG CYBER LAB</strong><br />
+  Digital Forensics Academy & Virtual Investigation Environment<br /><br />
   <em>Learn. Investigate. Analyze. Document.</em>
 </p>
